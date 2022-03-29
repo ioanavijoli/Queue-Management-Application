@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="756.0" style="-fx-background-color: #ebf9fc;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="66.0" prefWidth="739.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="44.0" prefWidth="390.0" text="Queues Management System" textFill="#121212" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Calibri" size="32.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.6671345233917236" green="0.72430020570755" blue="0.9789473414421082" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="739.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="383.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="62.0" prefWidth="210.0" text="Number of Clients:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nrClients" prefHeight="26.0" prefWidth="103.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="383.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="62.0" prefWidth="210.0" text="Number of Queues:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nrQueues" prefHeight="26.0" prefWidth="103.0" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="739.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="383.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="62.0" prefWidth="210.0" text="Minimum Arrival Time:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="minArrivalTime" prefHeight="26.0" prefWidth="103.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="383.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="62.0" prefWidth="210.0" text="Maximum Arrival Time:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="maxArrivalTime" prefHeight="26.0" prefWidth="103.0" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="739.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="383.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="62.0" prefWidth="210.0" text="Minimum Service Time:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="minServiceTime" prefHeight="26.0" prefWidth="103.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="383.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="62.0" prefWidth="210.0" text="Maximum Service Time:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="maxServiceTime" prefHeight="26.0" prefWidth="103.0" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="739.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="383.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="62.0" prefWidth="191.0" text="Strategy used:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="strategy" prefHeight="26.0" prefWidth="154.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="383.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="62.0" prefWidth="210.0" text="Simulation Interval:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="periodOfSimulation" prefHeight="26.0" prefWidth="103.0" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="81.0" prefWidth="756.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="383.0">
+               <children>
+                  <Label fx:id="invalidFormat" prefHeight="28.0" prefWidth="122.0" text="Invalid format" textFill="#ff1f02" visible="false">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="376.0">
+               <children>
+                  <Button fx:id="startButton" mnemonicParsing="false" onAction="#onStartClick" prefHeight="42.0" prefWidth="165.0" text="Start Simulation" textFill="#400cb1">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

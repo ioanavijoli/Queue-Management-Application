@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SimulationResultsController">
+   <children>
+      <VBox prefHeight="74.0" prefWidth="698.0" style="-fx-background-color: #e4f5f1;">
+         <children>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="218.0" text="Log of Events">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox prefHeight="477.0" prefWidth="698.0">
+         <children>
+            <TextArea fx:id="resultsArea" editable="false" prefHeight="494.0" prefWidth="698.0" style="-fx-background-color: #000000;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextArea>
+         </children>
+      </VBox>
+   </children>
+</VBox>
